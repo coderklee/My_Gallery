@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="main.js" defer></script>
+    <title>My Art</title>
+</head>
+<body>
+    <!--Start of Container For Art Images-->
+    <div class="container"> <h1>Klee's Gallery</h1>
+        <div class="gallery"> 
+            <figure class="gallery__item gallery__item--1" id="fig1" onclick="event.stopPropagation(); getArt(this.id, event)" >
+                <img class="gallery__img" src="images/6.jpg" alt="Sunday Music">
+                <h2><a href="https://www.artic.edu/artworks/22798/sunday-music-salvador-bahia">More Info</a></h2>
+            </figure>
+            <figure class="gallery__item gallery__item--2" id="fig2" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img" src="images/2.jpg" alt="The Great Wave">
+                <h2><a href="https://www.artic.edu/artworks/24645/under-the-wave-off-kanagawa-kanagawa-oki-nami-ura-also-known-as-the-great-wave-from-the-series-thirty-six-views-of-mount-fuji-fugaku-sanj%E7%AC%9Brokkei">More Info</a></h2>
+            </figure>
+            <figure class="gallery__item gallery__item--3" id="fig3" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img" src="images/3.jpg" alt="The Beach at Sainte-Adresse">
+                <h2><a href="https://www.artic.edu/artworks/14598/the-beach-at-sainte-adresse">More Info</a></h2>
+            </figure>
+            <figure class="gallery__item gallery__item--4" id="fig4" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img" src="images/4.jpg" alt="Landscape at L'Estaque">
+                <h2><a href="https://www.artic.edu/artworks/119521/landscape-at-l-estaque">More Info</a></h2>
+            </figure>
+            <figure class="gallery__item gallery__item--5" id="fig5" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img" src="images/5.jpg" alt="Flower Clouds">
+                <h2><a href="https://www.artic.edu/artworks/76395/flower-clouds">More Info</a></h2>
+            </figure>
+            <figure class="gallery__item gallery__item--6" id="fig6" onclick="event.stopPropagation(); getArt(this.id, event)">
+                <img class="gallery__img" src="images/1.jpg" alt="Nighthawks">
+                <h2><a href="https://www.artic.edu/artworks/111628/nighthawks">More Info</a></h2>
+            </figure>
+        </div>
+    </div>
+    <!-- <div class="container">
+		<div class="row">
+			<div class="row">
+				<div class="col-12 col-md-12">
+					<button class="btn btn-primary"onclick="load_data()">Get Data</button>
+					<button class="btn btn-danger"onclick="clear_data()">Clear Data</button>
+					<section class="list-group art-list">
+
+					</section>
+				</div>
+			</div>
+		</div>
+	</div> -->
+</body>
+</html>
